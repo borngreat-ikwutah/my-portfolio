@@ -6,28 +6,20 @@ const PAST_ROLES: {
   endDate: string
 }[] = [
   {
-    company: 'ACME Solutions',
-    role: 'CEO',
+    company: 'Chainspace HQ',
+    role: 'Frontend Engineer',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vel hic aspernatur molestiae exercitationem rerum reiciendis mollitia magnam harum ipsum?',
-    startDate: 'March 2023',
-    endDate: 'Now',
+      'Developed and maintained the Chainspace HQ platform, focusing on user interface improvements and feature enhancements for Web3 developers.',
+    startDate: 'September 2024',
+    endDate: 'December 2024',
   },
   {
-    company: 'Google',
-    role: 'Software Engineer',
+    company: 'Proxymed Healthcare',
+    role: 'Frontend Developer',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vel hic aspernatur molestiae exercitationem rerum reiciendis mollitia magnam harum ipsum?',
-    startDate: 'April 2021',
-    endDate: 'March 2023',
-  },
-  {
-    company: 'Vercel',
-    role: 'Developer Advocate',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vel hic aspernatur molestiae exercitationem rerum reiciendis mollitia magnam harum ipsum?',
-    startDate: 'April 2021',
-    endDate: 'June 2018',
+      'Worked on the Proxymed Healthcare platform, enhancing user experience and implementing new features for telemedicine services.',
+    startDate: 'January 2025',
+    endDate: 'April 2025',
   },
 ]
 

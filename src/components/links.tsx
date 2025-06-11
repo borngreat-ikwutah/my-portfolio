@@ -4,25 +4,26 @@ import {
   SiGmail,
   SiLinkedin,
   SiMedium,
+  SiX,
 } from '@icons-pack/react-simple-icons'
 
 export default function Links() {
   const links: { icon: IconType; href: string }[] = [
     {
       icon: SiGmail,
-      href: 'mailto:johndoe@gmail.com',
+      href: 'iagocech2056@gmail.com',
     },
     {
       icon: SiGithub,
-      href: 'https://github.com/johndoe',
+      href: 'https://github.com/borngreat-ikwutah',
     },
     {
       icon: SiLinkedin,
-      href: 'https://www.linkedin.com/in/johndoe/',
+      href: 'https://www.linkedin.com/in/borngreat-ikwutah/',
     },
     {
-      icon: SiMedium,
-      href: 'https://medium.com/@johndoe',
+      icon: SiX,
+      href: 'https://x.com/borngreatik23',
     },
   ]
 
