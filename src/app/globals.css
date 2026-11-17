@@ -44,10 +44,29 @@
   --shadow-shadow: var(--shadow);
   --font-weight-base: 500;
   --font-weight-heading: 700;
+
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --color-ink: #14120f;
+  --color-ink-soft: #101011;
+  --color-paper: #faf6ee;
+  --color-bone: #f4f2ed;
+  --color-smoke: #8b8b86;
+  --color-accent: #ff7a1a;
 }
 
 body {
   background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-ink);
 }
 
 body {
@@ -82,4 +101,14 @@ body::-webkit-scrollbar-thumb {
   body {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  scroll-padding-top: 5rem;
 }
