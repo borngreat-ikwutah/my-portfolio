@@ -9,12 +9,13 @@ export function ThemeSwitcher() {
   const { setTheme, theme } = useTheme()
 
   return (
-    <>
-      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-        <Sun className="stroke-main-foreground hidden size-4 sm:size-6 dark:inline" />
-        <Moon className="stroke-main-foreground inline size-4 sm:size-6 dark:hidden" />
-        <span className="sr-only">Toggle theme</span>
-      </button>
-    </>
+    <button
+      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      className="hover:text-accent inline-flex transition-colors duration-300"
+    >
+      <Sun className="hidden size-4 stroke-current sm:size-5 dark:inline" />
+      <Moon className="inline size-4 stroke-current sm:size-5 dark:hidden" />
+      <span className="sr-only">Toggle theme</span>
+    </button>
   )
 }

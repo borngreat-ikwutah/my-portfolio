@@ -1,0 +1,26 @@
+{
+  "name": "Borngreat Ikwutah Portfolio",
+  "short_name": "Borngreat",
+  "description": "Portfolio of Borngreat Ikwutah, frontend and mobile software engineer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5ebd9",
+  "theme_color": "#e88a2e",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

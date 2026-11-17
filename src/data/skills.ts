@@ -8,8 +8,8 @@ import {
   SiNextdotjs,
   SiReact,
   SiSass,
-  SiTailwindcss
-} from '@icons-pack/react-simple-icons';
+  SiTailwindcss,
+} from '@icons-pack/react-simple-icons'
 
 const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
   [
@@ -24,14 +24,7 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
         { skill: 'tailwind', icon: SiTailwindcss },
         { skill: 'nextjs', icon: SiNextdotjs },
         { skill: 'astro', icon: SiAstro },
-        {
-          skill: 'bootstrap',
-          icon: SiBootstrap,
-        },
-        {
-          skill: "Nextjs",
-          icon: SiNextdotjs,
-        }
+        { skill: 'bootstrap', icon: SiBootstrap },
       ],
     },
   ]

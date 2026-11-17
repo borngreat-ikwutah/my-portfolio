@@ -1,16 +1,23 @@
-import Links from '@/components/links'
+import { existsSync } from 'node:fs'
+import path from 'node:path'
+import Hero from '@/components/sections/hero'
+import SelectedWork from '@/components/sections/selected-work'
+import Contact from '@/components/sections/contact'
 
 export default function Home() {
-  return (
-    <div className="font-base">
-      <h1 className="text-2xl font-heading sm:text-4xl">Borngreat Ikwutah</h1>
-      <p className="mt-2 text-lg sm:text-xl">Frontend Software Engineer</p>
-      <div className="mt-8 text-base sm:text-lg">
-        <p>Hi, my name is Borngreat Ikwutah, a  frontend and mobile software engineer based in Nigeria.</p>
-       <br />
-      </div>
+  const hasPortrait = existsSync(
+    path.join(process.cwd(), 'public', 'portrait.png'),
+  )
 
-      <Links />
-    </div>
+  return (
+    <main>
+      <Hero
+        portraitSrc={
+          hasPortrait ? '/portrait.png' : '/portrait-placeholder.png'
+        }
+      />
+      <SelectedWork />
+      <Contact />
+    </main>
   )
 }
